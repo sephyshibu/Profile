@@ -6,6 +6,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	
 <!-- 	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet"> -->
+	<style>
+    .one-third.order-md-last.img {
+      position: relative;
+      background-image: url(newprofile.webp);
+      background-size: cover;
+      background-position: center;
+      contain: layout paint;
+    }
+    /* Inline critical styles */
+  </style>
 	<link rel="preload" href="newprofile.webp" as="image">
 	<link rel="preload" href="newrajagiri.webp" as="image">
 	<link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" as="image">
@@ -50,9 +60,15 @@
 				<div class="overlay"></div>
 				<div class="container-fluid px-md-0">
 					<div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-						<div class="one-third order-md-last img" style="background-image:url(newprofile.webp); position: relative;">
-							<div class="overlay overlay-1"></div>
-						</div>
+						 <div class="one-third order-md-last img">
+						    <div class="overlay overlay-1"></div>
+						  </div>
+						  <script>
+						    // Load background image after initial load
+						    document.addEventListener('DOMContentLoaded', function() {
+						      document.querySelector('.one-third.order-md-last.img').style.backgroundImage = 'url(newprofile.webp)';
+						    });
+						  </script>
 						<div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
 							<div class="text" style="margin-bottom: 500px;">
 								<span class="subheading">Hello! This is Sephy</span>
