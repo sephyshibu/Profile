@@ -6,7 +6,7 @@
  */
 @font-face {
   font-family: 'Poppins';
-  src: url('Poppins.woff2') format('woff2');
+  src: url('poppins-regular-webfont.woff2') format('woff2');
   font-display: swap;
 }
 :root {
