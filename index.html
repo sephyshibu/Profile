@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	
 <!-- 	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet"> -->
-	<style>
+<!-- 	<style>
     .one-third.order-md-last.img {
       position: relative;
       background-image: url(newprofile.webp);
@@ -15,9 +15,9 @@
       contain: layout paint;
     }
     /* Inline critical styles */
-  </style>
-	<link rel="preload" href="newprofile.webp" as="image">
-	<link rel="preload" href="newrajagiri.webp" as="image">
+  </style> -->
+	<link rel="preload" href="placeholderprofile.webp" as="image">
+	<link rel="preload" href="placeholderrajagiri.webp" as="image">
 	<link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" as="image">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" async>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -60,15 +60,21 @@
 				<div class="overlay"></div>
 				<div class="container-fluid px-md-0">
 					<div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-						 <div class="one-third order-md-last img">
-						    <div class="overlay overlay-1"></div>
-						  </div>
-						  <script>
-						    // Load background image after initial load
-						    document.addEventListener('DOMContentLoaded', function() {
-						      document.querySelector('.one-third.order-md-last.img').style.backgroundImage = 'url(newprofile.webp)';
-						    });
-						  </script>
+						 <div class="one-third order-md-last img" style="background-image: url(placeholderprofile.webp); position: relative;">
+						  <div class="overlay overlay-1"></div>
+						</div>
+						
+						<script>
+						  document.addEventListener('DOMContentLoaded', function() {
+						    const imgDiv = document.querySelector('.one-third.order-md-last.img');
+						    const img = new Image();
+						    img.src = 'newprofile.webp';
+						    img.onload = function() {
+						      imgDiv.style.backgroundImage = 'url(newprofile.webp)';
+						    };
+						  });
+						</script>
+
 						<div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
 							<div class="text" style="margin-bottom: 500px;">
 								<span class="subheading">Hello! This is Sephy</span>
@@ -447,7 +453,7 @@
 			<div class="row">
 				<div class="col-12">
 					<div class="edu img shadow ftco-animate d-flex justify-content-center align-items-center "style="background-color: #b1b493;">
-						<img src="newrajagiri.webp" alt="Rajagiri School of Engineering and Technology" loading="lazy">
+						<img src="placeholderrajagiri.webp" alt="Rajagiri School of Engineering and Technology" loading="lazy">
 
 						<div class="overlay"></div>
 						<div class="text text-center" style="font: 95px" >
@@ -460,7 +466,7 @@
 
 				<div class="col-12">
 					<div class="edu img shadow ftco-animate d-flex justify-content-center align-items-center "style="background-color: #b1b493;">
-						<img src="newrajagiri.webp" alt="Rajagiri School of Engineering and Technology"  loading="lazy">
+						<img src="palceholderrajagiri.webp" alt="Rajagiri School of Engineering and Technology"  loading="lazy">
 						<div class="overlay"></div>
 						<div class="text text-center" style="font: 95px" >
 							<h3 class="customheading">Amal Jyothi COllege of Engineering and Technology</h3><br>
@@ -472,7 +478,7 @@
 
 				<div class="col-12">
 					<div class="edu img shadow ftco-animate d-flex justify-content-center align-items-center "style="background-color: #b1b493;">
-						<img src="newrajagiri.webp" alt="Rajagiri School of Engineering and Technology"  loading="lazy">
+						<img src="placeholderrajagiri.webp" alt="Rajagiri School of Engineering and Technology"  loading="lazy">
 						<div class="overlay"></div>
 						<div class="text text-center" style="font: 95px" >
 							<h3 class="customheading">Chavara Public School</h3><br>
@@ -485,7 +491,7 @@
 
 				<div class="col-12">
 					<div class="edu img shadow ftco-animate d-flex justify-content-center align-items-center "style="background-color: #b1b493;">
-						<img src="newrajagiri.webp" alt="Rajagiri School of Engineering and Technology"  loading="lazy">
+						<img src="placeholderrajagiri.webp" alt="Rajagiri School of Engineering and Technology"  loading="lazy">
 						<div class="overlay"></div>
 						<div class="text text-center" style="font: 95px" >
 							<h3 class="customheading">Evershine Residential School</h3><br>
