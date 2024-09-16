@@ -4038,6 +4038,11 @@ input[type="button"].btn-block {
     outline: 0;
     -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); }
+.one-third.order-md-last.img {
+    min-height: 300px; /* Adjust based on your design */
+    background-size: cover; /* Ensures the background image covers the div */
+    background-position: center; /* Centers the image */
+}
 
 .page-item:first-child .page-link {
   margin-left: 0;
